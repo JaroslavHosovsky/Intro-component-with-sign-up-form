@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro component with sign-up form</title>
+  </head>
+  <body
+    class="font-poppins bg-[#ff7a7a] h-[100svh] flex justify-center items-center bg-[url('./img/bg-intro-mobile.png')]"
+  >
+    <main
+      class="w-[85%] m-auto relative max-w-[315px] lg:grid lg:grid-cols-2 lg:max-w-[75%] 2xl:max-w-[55%]"
+    >
+      <section
+        class="text-center text-white mb-28 lg:mb-0 lg:text-left lg:flex lg:flex-col lg:justify-center lg:p-12"
+      >
+        <h1 class="text-2xl mb-4 lg:text-4xl font-semibold lg:font-semibold">
+          Learn to code by watching others
+        </h1>
+        <p class="">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="bg-white p-6 rounded-xl shadow-container">
+        <form action="" class="flex flex-col">
+          <div class="relative">
+            <input
+              id="first-name"
+              type="text"
+              placeholder="First Name"
+              class="outline-[#6055a5] p-3 border border-[#b9b6d3] rounded-md mb-3 font-medium w-[100%]"
+            />
+            <img
+              src="/img/icon-error.svg"
+              alt=""
+              class="absolute top-[13px] right-[13px] hidden error-img"
+            />
+            <p
+              class="text-[12px] text-right italic text-[#ff7a7a] -mt-2 mb-4 font-medium hidden error-text"
+            >
+              First Name cannot be empty
+            </p>
+          </div>
+
+          <div class="relative">
+            <input
+              id="last-name"
+              type="text"
+              placeholder="Last Name"
+              class="outline-[#6055a5] p-3 border border-[#b9b6d3] rounded-md mb-3 font-medium w-[100%]"
+            />
+            <img
+              src="/img/icon-error.svg"
+              alt=""
+              class="absolute top-[13px] right-[13px] hidden error-img2"
+            />
+            <p
+              class="text-[12px] text-right italic text-[#ff7a7a] -mt-2 mb-4 font-medium hidden error-text2"
+            >
+              Last Name cannot be empty
+            </p>
+          </div>
+
+          <div class="relative">
+            <input
+              type="email"
+              placeholder="Email Address"
+              name=""
+              id="email"
+              class="outline-[#6055a5] p-3 border border-[#b9b6d3] rounded-md mb-3 font-medium w-[100%]"
+            />
+            <img
+              src="/img/icon-error.svg"
+              alt=""
+              class="absolute top-[13px] right-[13px] hidden error-text3"
+            />
+            <p
+              class="text-[12px] text-right italic text-[#ff7a7a] -mt-2 mb-4 font-medium hidden error-img3"
+            >
+              Looks like this is not an email
+            </p>
+          </div>
+
+          <div class="relative">
+            <input
+              type="password"
+              placeholder="Password"
+              name=""
+              id="password"
+              class="outline-[#6055a5] p-3 border border-[#b9b6d3] rounded-md mb-3 font-medium w-[100%]"
+            />
+            <img
+              src="/img/icon-error.svg"
+              alt=""
+              class="absolute top-[13px] right-[13px] hidden error-img4"
+            />
+            <p
+              class="text-[12px] text-right italic text-[#ff7a7a] -mt-2 mb-4 font-medium hidden error-text4"
+            >
+              Password cannot be empty
+            </p>
+          </div>
+
+          <button
+            type="submit"
+            class="uppercase bg-[#38cc8c] hover:bg-[#77e2b4] text-white rounded-md py-3 px-5 mb-3 shadow-container-green"
+          >
+            Claim your free trial
+          </button>
+          <p class="text-[11px] text-center text-[#b9b6d3]">
+            By clicking the button, you are agreeing to our
+            <span class="text-[#ff7a7a] font-semibold">Terms and Services</span>
+          </p>
+        </form>
+      </section>
+      <div
+        class="bg-[#6055a5] text-white py-4 px-16 w-[100%] absolute top-[222px] text-center rounded-xl shadow-container text-[14px] lg:top-[-80px] lg:right-[0px] lg:max-w-[50%]"
+      >
+        <span class="font-bold">Try it free 7 days</span> then $20/mo.
+        thereafter
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
